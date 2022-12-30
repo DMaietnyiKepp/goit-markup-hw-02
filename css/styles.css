@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: #2E2F42;
 }
 
 .list {
@@ -8,18 +9,23 @@ body {
 
 .link {
     text-decoration: none;
+    font-style: normal;
 }
 
-
-/* Studio page */
-
-/*
-.header {
+:root {
+    --LogoColor: #4D5AE5;
+    --MainTextColor: #2E2F42;
+    --SecondTextColor: #434455;
 }
 
+/*--------------------- STUDIO PAGE -----------------------*/
+
+/*--------------- header ---------------*/
+
+/* .header {
+}
 .header-navigation {
-}
-*/
+} */
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -28,54 +34,52 @@ body {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42; 
-}
-.header-logo-word {
-    color: #4D5AE5; 
+    color: var(--MainTextColor)
 }
 
-.header-list {
+.header-logo-word {
+    color: var(--LogoColor)
+}
+
+/* .header-list {
+}
+.header-list-item {
+} */
+
+.header-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--MainTextColor)
 }
 
-/*
-.header-list-item {
-}
-
-.header-link {
-}
-
-.header-address {
-}
-*/
+/* .header-address {
+} */
 
 .address-list {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
-/*
-.address-list-item {
-}
+/* .address-list-item {
+} */
 
 .address-mail {
+    color: var(--SecondTextColor)
 }
 
 .address-tel {
+    color: var(--SecondTextColor)
 }
-*/
 
-/*
-.main {
-}
-*/
+/*--------------- main ---------------*/
+
+/* .main {
+} */
+
+/*--------------- hero --------------*/
 
 .hero {
     background: #2E2F42;
@@ -99,92 +103,77 @@ body {
     color: #FFFFFF;
 }
 
-/*
-.studio-advantage {
-}
+/*-------------- studio advantage ---------------*/
 
+/* .studio-advantage {
+}
 .studio-advantage-list {
 }
-
 .studio-list-item {
-}
-*/
+} */
 
 .studio-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
 }
 
 .studio-item-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--SecondTextColor)
 }
 
-/*
-.studio-works {
-}
-*/
+/*-------------- studio works --------------*/
+
+/* .studio-works {
+} */
 
 .studio-works-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
 }
 
-/*
-.studio-works-list {
+/* .studio-works-list {
 }
-
 .works-list-item {
-}
+} */
 
-.studio-team {
-}
-*/
+/*--------------- studio team ---------------*/
+
+/* .studio-team {
+} */
 
 .studio-team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
 }
 
-/*
-.studio-team-list {
+/* .studio-team-list {
 }
-
 .studio-team-list-item {
 }
-
 .studio-team-member {
-}
-*/
+} */
 
 .studio-member-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
 }
 
 .studio-member-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--SecondTextColor)
 }
 
 .footer {
@@ -206,25 +195,29 @@ body {
 }
 
 .footer-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
 
-/* Portfolio page */
+/*--------------------- PORTFOLIO PAGE ---------------------*/
 
-/*
+/* .portfolio-info {
+}
 .portfolio-navigation-list {
 }
-
 .portfolio-navigation-item {
+} */
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: #FFFFFF;
 }
-*/
 
 .portfolio-btn {
-    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -232,30 +225,21 @@ body {
     color: #4D5AE5;
 }
 
-.first-btn {
-    color: #FFFFFF;
+/* .portfolio-service-list {
 }
-
-/*
-.portfolio-service-list {
-}
-
 .portfolio-service-item {
-}
-*/
+} */
 
 .service-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
 }
 
 .service-item-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--SecondTextColor)
 }
